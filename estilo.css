@@ -18,7 +18,7 @@
     background: #32bf68;
     background: linear-gradient(180deg, rgba(50, 191, 104, 1) 0%, rgb(200, 211, 51) 100%);
     padding: 15px 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .logo {
@@ -44,8 +44,7 @@
     color: #2f7725;
 }
 
-
-.hero {
+.intro {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,15 +53,11 @@
     color: rgb(255, 255, 255);
 }
 
-.hero-text h1 {
+.intro-text h1 {
     font-size: 32px;
 }
 
-.hero-text h2 {
-    margin: 10px 0;
-}
-
-.hero-text p {
+.intro-text h2 {
     margin: 10px 0;
 }
 
@@ -70,4 +65,108 @@
     width: 150px;
     height: 150px;
     border-radius: 100%;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    padding: 50px 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.subtitulo {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* CONTENEDOR FLEX */
+.contenedor {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CAJAS GENERALES */
+.cajas {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+.texto {
+    flex: 2;
+    text-align: left;
+}
+
+/* DATOS */
+.datos {
+    flex: 1;
+    text-align: left;
+}
+
+.datos ul {
+    list-style: none;
+}
+
+.datos li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* FRASE */
+blockquote {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #eee;
+    border-left: 5px solid #f39c12;
+    font-style: italic;
+}
+
+/* CARDS */
+.cards {
+    padding: 50px 40px;
+    background-color: #ffffff;
+}
+
+.cards .cajas {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #3b7bbf, #2c5d8a);
+    color: white;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.cards .cajas:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        margin-top: 20px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto, .datos {
+        width: 90%;
+    }
 }
