@@ -62,12 +62,11 @@
 }
 
 .hero-img img {
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
     border-radius: 100%;
 }
 
-/* SOBRE MI */
 .sobre-mi {
     padding: 50px 40px;
     background-color: #f4f4f4;
