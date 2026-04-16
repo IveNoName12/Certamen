@@ -22,15 +22,20 @@
 }
 
 .logo {
-    background: #cad929;
+    position: relative;
+    z-index: 2;
+    background: #c6cf5d;
     background: radial-gradient(circle, rgb(235, 220, 85) 1%, rgb(192, 127, 73) 100%);
-    padding: 10px 14px;
+    padding: 10px 10px;
     border-radius: 6px;
     font-weight: bold;
 }
 
 .navlinks {
     display: flex;
+    position: relative;
+    z-index: 3;
+
     gap: 25px;
 }
 
@@ -96,8 +101,20 @@
 
 /* TEXTO */
 .texto {
-    flex: 2;
+    flex:2;
     text-align: left;
+}
+
+.texto-dos {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+    flex:1;
+    text-align: left;
+    margin-left: -5px;
+    background: linear-gradient(135deg, rgb(200, 140, 64), #2c5d8a00);
+
 }
 
 /* DATOS */
