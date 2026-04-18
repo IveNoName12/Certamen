@@ -31,6 +31,18 @@
     font-weight: bold;
 }
 
+.nombre {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+    flex:1;
+    text-align: left;
+    margin-left: -5px;
+    background: linear-gradient(135deg, rgb(200, 140, 64), #2c5d8a00);
+
+}
+
 .navlinks {
     display: flex;
     position: relative;
@@ -101,7 +113,7 @@
 
 /* CAJAS GENERALES */
 .cajas {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
@@ -111,19 +123,13 @@
 .texto {
     flex:2;
     text-align: left;
+    ;
 }
 
-.texto-dos {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding: 10px;
-    flex:1;
-    text-align: left;
-    margin-left: -5px;
-    background: linear-gradient(135deg, rgb(200, 140, 64), #2c5d8a00);
-
+.frase {
+    padding: 40p;
 }
+
 
 /* DATOS */
 .datos {
@@ -169,8 +175,8 @@ blockquote {
 
 /* HOVER */
 .cards .cajas:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
+    transform: translatey(-5px);
+    box-shadow: 0px 8px 15px rgba(143, 101, 101, 0.3);
 }
 
 /* RESPONSIVE */
@@ -194,3 +200,61 @@ blockquote {
         width: 90%;
     }
 }
+
+/* HABILIDADES */
+
+.titulo {
+    background-color:#ffffff;
+    width: 200px;
+    text-align: center;
+    margin: 40px auto;
+
+}
+
+
+/* TABLA */
+
+.tabla {
+    margin: 40px auto;
+    width: 600px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background:linear-gradient(rgb(21, 158, 51),rgb(99, 206, 50));
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 12px
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+tr:nth-child(even){
+    background: #f3f3f3;
+}
+
+/* BARRA */
+
+.barra {
+    width: 100%;
+    height: 8px;
+    background: #cecece;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progreso {
+    display:block;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.html { width: 90%; background:linear-gradient(90deg, rgb(214, 79, 0), orange); }
+.python{ width: 75%; background: linear-gradient(45deg, rgba(42, 123, 155, 1) 50%, rgb(235, 195, 65) 50%);; }
+.css { width: 80%; background: linear-gradient(90deg, rgb(7, 98, 184), rgb(0, 162, 255)); }
+
