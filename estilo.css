@@ -12,6 +12,7 @@
 }
 
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +20,8 @@
     background: linear-gradient(180deg, rgba(50, 191, 104, 1) 0%, rgb(200, 211, 51) 100%);
     padding: 15px 40px;
     color: rgb(0, 0, 0);
+    width: 100%;
+    z-index: 100;
 }
 
 .logo {
@@ -440,4 +443,55 @@ button {
     .fila {
         grid-template-columns: 1fr;
     }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color:#32bf68;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.redes a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:600px) {
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .redes a {
+        margin: 0 10px;
+    }
+}
+
+
+/* SCROLL NAVBAR */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 60px;
 }
