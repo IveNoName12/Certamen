@@ -71,8 +71,8 @@
                 <h3>Datos Personales</h3>
                 <ul>
                     <li><strong>Edad:</strong> 19 años</li>
-                    <li><strong>Ciudad:</strong> Concepcion, Chile</li>
-                    <li><strong>Email:</strong> correodemartin@gmail.com</li>
+                    <li><strong>Ciudad:</strong> Arauco, Chile</li>
+                    <li><strong>Email:</strong> martin@email.com</li>
                     <li><strong>Carrera:</strong> Ingeniería en Informática</li>
                     <li><strong>Intereses:</strong> Gaming</li>
                 </ul>
@@ -145,6 +145,7 @@
             <figure class = "card">
                 <div class = "top"></div>
                 <figcaption>
+                    <p>Texto de ejemplo</p>
                     <h3>Landing Page</h3>
                     <p>Descripción del proyecto</p>
                     <a href ="#">Ver repositorio</a>
@@ -154,6 +155,7 @@
             <figure class = "card">
                 <div class = "top"></div>
                 <figcaption>
+                    <p>Texto de ejemplo</p>
                     <h3>Landing Page</h3>
                     <p>Descripción del proyecto</p>
                     <a href ="#">Ver repositorio</a>
@@ -163,6 +165,7 @@
             <figure class = "card">
                 <div class = "top"></div>
                 <figcaption>
+                    <p>Texto de ejemplo</p>
                     <h3>Landing Page</h3>
                     <p>Descripción del proyecto</p>
                     <a href ="#">Ver repositorio</a>
@@ -170,6 +173,61 @@
             </figure>
         </div>
 
+    </section>
+
+    <section class = "contacto">
+        <div class = "titulodos">
+            <h2>Contacto</h2>
+            <p>Enviame un mensaje</p>
+        </div>
+
+        <div class= "contenedor-contacto">
+            
+            <form action="/contacto" method="POST">
+
+                <div class="fila">
+                    <div>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre"
+                        placeholder="Tu nombre"
+                        requiered minlength="3">
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email"
+                        placeholder="tu@email.com"
+                        required >
+                    </div>
+                </div>
+
+                <div>
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="">Selecciona...</option>
+                        <option value="asunto1">Asunto 1</option>
+                        <option value="asunto2">Asunto 2</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="msg">Mensaje</label>
+                    <textarea id="msg" name="mensaje" rows="4"
+                    placeholder="Escribe tu mensaje aqui" required></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+
+            <div class="info">
+                <h3>Información de contacto</h3>
+                <ul>martin@email.com</ul>
+                <ul>Arauco, Chile</ul>
+                <ul>+56 9 1234 5678</ul>
+                <a href="https://www.github.com/IveNoName12">github.com/IveNoName12</a>
+
+            </div>
+        </div>
     </section>
 
 </html>
