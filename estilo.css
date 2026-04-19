@@ -203,8 +203,13 @@ blockquote {
 
 /* HABILIDADES */
 
+.habilidades{
+    padding: 50px 40px;
+    background-color: rgb(255, 255, 255);
+}
+
 .titulo {
-    background-color:#ffffff;
+    background-color: white;
     width: 200px;
     text-align: center;
     margin: 40px auto;
@@ -220,6 +225,7 @@ blockquote {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow:0 5px 15px rgb(61, 59, 59);;
 }
 
 th{
@@ -294,3 +300,61 @@ tr:nth-child(even){
     border-left: 5px solid #0984e3
 }
 
+/* TARJETAS */
+
+.proyectos{
+    padding: 40px 50px;
+    background-color: #ebebeb;
+}
+
+.proy {
+    text-align: center;
+    height: 100px;
+}
+
+.proy p {
+    color: rgb(66, 66, 66);
+    text-align: center;
+    height: 100px;
+}
+
+
+.grid {
+    padding: 0px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgb(61, 59, 59);
+}
+
+.top {
+    height: 120px;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+
+}
+
+figcaption {
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card:nth-child(1) .top {
+    background: linear-gradient(135deg, #79a3fd, #e8439e);
+}
+
+.card:nth-child(2) .top {
+    background: linear-gradient(135deg, #fd79a8, #e5e843);
+}
+
+.card:nth-child(3) .top {
+    background: linear-gradient(135deg, #fbfd79, #43e86c);
+}
