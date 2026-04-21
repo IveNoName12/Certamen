@@ -35,6 +35,7 @@
 }
 
 .nombre {
+    text-decoration: none;
     position: relative;
     z-index: 1;
     color: white;
@@ -44,6 +45,10 @@
     margin-left: -5px;
     background: linear-gradient(135deg, rgb(200, 140, 64), #2c5d8a00);
 
+}
+
+.nombre:hover {
+    color: #b17220;
 }
 
 .navlinks {
@@ -70,7 +75,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 40px;
+    padding: 100px 40px;
     background: linear-gradient(90deg, #247e6a, #88cc5a);
     color: rgb(255, 255, 255);
 }
@@ -88,6 +93,7 @@
 }
 
 .hero-img img {
+    margin-top: 10px;
     position: relative;
     z-index: 3;
     width: 190px;
